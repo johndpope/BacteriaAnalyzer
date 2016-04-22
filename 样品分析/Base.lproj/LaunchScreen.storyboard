@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="q10-Th-rh3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q10-Th-rh3" secondAttribute="height" id="h10-ei-ho7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h10-ei-ho7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="h10-ei-ho7"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bacteria Analyzer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyK-wI-mad">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kyK-wI-mad" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0Dc-bF-z8d"/>
+                            <constraint firstItem="q10-Th-rh3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1Ar-h3-tAm"/>
+                            <constraint firstItem="q10-Th-rh3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="60" id="2B8-wu-X69">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="kyK-wI-mad" firstAttribute="top" secondItem="q10-Th-rh3" secondAttribute="bottom" constant="126" id="3An-oN-CD3">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="q10-Th-rh3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.8" id="8Mi-ve-eyo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="kyK-wI-mad" secondAttribute="bottom" constant="74" id="AQT-y2-mhX"/>
+                            <constraint firstItem="q10-Th-rh3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="253" id="YwQ-Np-2K3"/>
+                            <constraint firstItem="q10-Th-rh3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="253" id="a0J-FH-FB1"/>
+                            <constraint firstItem="kyK-wI-mad" firstAttribute="top" secondItem="q10-Th-rh3" secondAttribute="bottom" constant="192.5" id="fmN-Qc-JJ8">
+                                <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="kyK-wI-mad" firstAttribute="width" secondItem="q10-Th-rh3" secondAttribute="width" id="fyD-w3-yxZ"/>
+                            <constraint firstItem="kyK-wI-mad" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="p7e-P7-e6g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q10-Th-rh3" secondAttribute="trailing" constant="60" id="rBx-dS-Khd">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="kyK-wI-mad" firstAttribute="width" secondItem="q10-Th-rh3" secondAttribute="height" multiplier="67:180" id="umz-Z8-Vsf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="q10-Th-rh3"/>
+                                <exclude reference="kyK-wI-mad"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AQT-y2-mhX"/>
+                                <exclude reference="0Dc-bF-z8d"/>
+                                <exclude reference="3An-oN-CD3"/>
+                                <exclude reference="fmN-Qc-JJ8"/>
+                                <exclude reference="fyD-w3-yxZ"/>
+                                <exclude reference="p7e-P7-e6g"/>
+                                <exclude reference="umz-Z8-Vsf"/>
+                                <exclude reference="1Ar-h3-tAm"/>
+                                <exclude reference="2B8-wu-X69"/>
+                                <exclude reference="8Mi-ve-eyo"/>
+                                <exclude reference="YwQ-Np-2K3"/>
+                                <exclude reference="a0J-FH-FB1"/>
+                                <exclude reference="rBx-dS-Khd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="q10-Th-rh3"/>
+                                <include reference="kyK-wI-mad"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AQT-y2-mhX"/>
+                                <exclude reference="0Dc-bF-z8d"/>
+                                <exclude reference="3An-oN-CD3"/>
+                                <include reference="fmN-Qc-JJ8"/>
+                                <include reference="fyD-w3-yxZ"/>
+                                <include reference="p7e-P7-e6g"/>
+                                <exclude reference="umz-Z8-Vsf"/>
+                                <include reference="1Ar-h3-tAm"/>
+                                <include reference="2B8-wu-X69"/>
+                                <include reference="8Mi-ve-eyo"/>
+                                <exclude reference="YwQ-Np-2K3"/>
+                                <exclude reference="a0J-FH-FB1"/>
+                                <include reference="rBx-dS-Khd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="1280" height="1280"/>
+    </resources>
+</document>
